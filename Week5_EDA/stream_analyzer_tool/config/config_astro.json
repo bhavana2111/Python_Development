@@ -1,0 +1,65 @@
+{
+    "expected_audio_track_count" : 2,
+    "expected_video_track_count" : 1,
+    "supported_audio_formats" : ["AAC LC SBR","AC-3"],
+    "supported_ac3_channels" : ["6 channels"],
+    "AVC_Video" : {
+        "Format/Info" : "Advanced Video Codec",
+        "Format profile": "High@L4",
+        "Format settings": "CABAC / 4 Ref Frames",
+        "Format settings, CABAC": "Yes",
+        "Codec ID" : "27",
+        "Format settings, Reference frames": "4 frames",
+        "Format settings, GOP": "M=8, N=24",
+        "Width": "1 280 pixels",
+        "Height": "720 pixels",
+        "Display aspect ratio":"16:9",
+        "Frame Rate": "25.000 FPS",
+        "Color space": "YUV",
+        "Chroma subsampling": "4:2:0",
+        "Bit depth": "8 bits",
+        "Scan type": "Progressive"
+    },
+
+   "AC3_6_channels" : {
+        "Format/Info": "Audio Coding 3",
+        "Commercial name": "Dolby Digital",
+        "Codec ID": "6",
+        "Channel(s)": "6 channels",
+        "Channel layout": "L R C LFE Ls Rs",
+        "Sampling rate": "48.0 kHz"
+    },
+
+    "AAC_LC_SBR_2_channels" : {
+        "Format" : "AAC LC SBR",
+        "Commercial name": "HE-AAC",
+        "Format settings": "NBC",
+        "Muxing mode": "LATM",
+        "Codec ID": "17-2",
+        "Sampling rate": "48.0 kHz",
+        "Frame Rate": "23.438 FPS (2048 SPF)",
+        "Channel(s)": "2 channels",
+        "Channel layout": "L R"
+    },
+
+    "keys_expected" : {
+        "AVC_Video" : [
+            "ID", "Format", "Format/Info", "Format profile", "Format settings", "Format settings, CABAC", 
+            "Format settings, Reference frames", "Format settings, GOP" , "Codec ID", "Duration", "Width", "Height", 
+            "Display aspect ratio", "Frame rate", "Standard" , "Color space", "Chroma subsampling", "Bit depth", 
+            "Scan type"
+        ],
+        "AC3_Audio" :  [
+            "ID", "Format", "Format/Info", "Commercial name", "Codec ID", "Duration", "Bit rate", 
+            "Bit rate mode", "Channel(s)", "Channel layout", "Sampling rate", "Frame rate", 
+            "Compression mode", "Delay relative to video", "Service kind", "Max tolerance in duration"
+        ],
+        "AAC_LC_SBR_Audio" : [
+            "ID", "Format", "Format version", "Commercial name", "Format settings", "Muxing mode", 
+            "Codec ID", "Duration", "Bit rate mode","Channel(s)", "Channel layout", 
+            "Sampling rate", "Frame rate","Compression mode", "Delay relative to video",
+            "Max tolerance in duration"
+        ]
+
+    }
+}
